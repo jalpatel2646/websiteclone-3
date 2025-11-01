@@ -1,0 +1,385 @@
+/* --- Global Styles & Resets --- */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-banner {
+    background-color: #FFFDE7;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+}
+
+.nav-left .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-center ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-center a {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-right a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.product-categories {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 110px;
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.category-item p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+
+.button {
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #000000;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    top: -10vw;
+}
+
+
+.hero-banner {
+
+
+    background-image: url('RifleHalloween_homepage-hero--desktop.webp');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-content h1 {
+    font-size: 5.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card {
+    text-align: left;
+}
+
+
+
+.product-price {
+    font-size: 1em;
+    margin: 0;
+    font-weight: 600;
+
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.category-item {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.section-header {
+
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.best-sellers {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-arrows .arrow {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.product-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 220px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    aspect-ratio: 1 / 1;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.rating {
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0;
+    height: 40px;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.price .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+/* Collab Section */
+.collabs {
+    padding: 40px 20px;
+}
+
+.collabs h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.brand-logos img {
+    height: 40px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+/* Espresso Section */
+.espresso {
+    padding: 60px 20px;
+}
+
+.espresso h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 5%;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 40px;
+}
+.footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10px;
+    opacity: 0.6;
+}

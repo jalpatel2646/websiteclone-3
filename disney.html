@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Princess Collection</title>
+    <link rel="stylesheet" href="disney.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #fff;
+        color: #111;
+    }
+
+    header {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+
+    main {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .filters {
+        width: 200px;
+    }
+
+    .filters ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .filters li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .products {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .product {
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .product h4 {
+        margin: 0.5rem 0;
+    }
+
+    @media(max-width:768px) {
+        main {
+            flex-direction: column;
+        }
+
+        .filters {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>DISNEY PRINCESS COLLECTION</h1>
+    </header>
+
+    <main>
+        <aside class="filters">
+            <h3>FILTERS</h3>
+            <ul>
+                <li>Color</li>
+                <li>Collection</li>
+                <li>Size</li>
+                <li>Drinks</li>
+                <li>Attributes</li>
+            </ul>
+        </aside>
+
+        <section class="products">
+            <div class="product">
+                <img src="https://corkcicle.com/cdn/shop/files/DIS2830DP-A_pdp-1_757a3464-a633-4802-bad2-6c180d0a0e4e_360x.png?v=1760643445"
+                    alt="">
+                <h4>DISNEY PRINCESS GO CUP XL</h4>
+                <p>$40.00 | Ariel</p>
+            </div>
+
+            <div class="product">
+                <img src="https://corkcicle.com/cdn/shop/products/DIS2224DP-B_360x.png?v=1760535431" alt="">
+                <h4>DISNEY PRINCESS LEAKPROOF CRUISER</h4>
+                <p>$39.95 | Tiana</p>
+            </div>
+
+            <div class="product">
+                <img src="https://corkcicle.com/cdn/shop/files/DDIS2240MN-1_360x.png?v=1760715714" alt="">
+                <h4>DISNEY PRINCESS COLD CUP</h4>
+                <p>$39.95 | Belle</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

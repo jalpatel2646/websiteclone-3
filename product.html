@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLD CUP | Product Page</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #fff;
+        color: #111;
+    }
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .product-image img {
+        width: 320px;
+        border-radius: 12px;
+    }
+
+    .product-info {
+        max-width: 400px;
+        margin-left: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        color: #7f6969;
+        margin-bottom: 1rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        margin-bottom: 1.2rem;
+    }
+
+       .sizes button {
+        border: 1px solid #000;
+        background: #fff;
+        padding: 6px 12px;
+        margin: 4px;
+        cursor: pointer;
+    }
+
+    .sizes button.active {
+        background: #000;
+        color: #fff;
+    }
+
+    .quantity {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .quantity button {
+        border: 1px solid #000;
+        background: #eee;
+        padding: 4px 10px;
+    }
+
+    .add {
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    @media(max-width:768px) {
+        .product-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-info {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://corkcicle.com/cdn/shop/files/2224PPP-01_900x.png?v=1761749429" alt="Cold Cup">
+        </div>
+
+        <div class="product-info">
+            <h1>COLD CUP</h1>
+            <p class="subtitle">INSULATED TUMBLER WITH STRAW</p>
+            <p class="price">$34.95</p>
+
+            
+
+            <div class="section">
+                <p><strong>SIZE:</strong></p>
+                <div class="sizes">
+                    <button class="active">24oz Cold Cup</button>
+                    <button>30oz Cold Cup XL</button>
+                    <button>40oz Cruiser</button>
+                </div>
+            </div>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <button class="add">ADD TO CART</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
